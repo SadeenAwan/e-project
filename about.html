@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNBC News - Your Trusted News Source</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./Assets/css/about.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="bi bi-newspaper me-2"></i>DNBC News
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./business.html">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sport.html">Sport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./today_in_world.html">Today in world</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search news..." aria-label="Search">
+            <button  class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <div class="ms-2 d-none d-lg-block">
+            <a href="#" class="btn btn-secondary btn-sm">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="featured-news">
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Assets/img/about/top 11.webp" class="d-block w-100" alt="Climate Summit">
+          <div class="carousel-caption">
+            <span class="badge bg-primary mb-2">World</span>
+            <h2>Global Leaders Meet to Tackle Economic and Security Challenges</h2>
+            <p class="d-none d-md-block">World leaders gathered today for a high-level summit addressing economic
+              instability and global security concerns. Discussions focused on trade, climate change, and emerging
+              technologies.</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Assets/img/about/22 (2).webp"
+            class="d-block w-100" alt="Tech Innovation">
+          <div class="carousel-caption">
+            <span class="badge bg-primary mb-2">Technology</span>
+            <h2>Revolutionary AI Technology Transforms Healthcare</h2>
+            <p class="d-none d-md-block">New artificial intelligence system can predict health issues with 95% accuracy.
+            </p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Assets/img/about/11 (8).webp" class="d-block h-80 w-100" alt="Sports Championship">
+          <div class="carousel-caption">
+            <span class="badge bg-primary mb-2">Sports</span>
+            <h2>Underdog Team Claims Championship in Stunning Upset</h2>
+            <p class="d-none d-md-block">Here is a vibrant sports-themed digital illustration featuring athletes from
+              various disciplines, a stadium with cheering crowds, and motion effects capturing the excitement of global
+              competition</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  
+  <!-- Main Content -->
+  <main class="container py-5">
+    <!-- Our Story Section -->
+    <section class="mb-5">
+      <div class="row">
+        <div class="text-center ">
+          <h2 class="section-title-centered mb-4  ">About Us . </p>
+          <h6 class="mb-4 about-text">We are a paywall-free DNBC platform for the advertising and marketing community. Half a million visitors from ad agencies, brands and maker companies use it every month to find out about the most creative news, work, people and companies from around the world. 
+            Our mission is to help the creative sector and the businesses in it to grow. All the tools and benefits we build into our platform and our memberships aim to help companies and individuals save precious time and spend so that they can reinvest it in what they do best - being creative.
+            
+            There are three ways to interact with Little Black Book: As a Company Member (£1,500 per annum), individually as a Pro User (£99.99 per annum) and individually as a User (free) - Read the benefits and how it works for different members here. .</h6>
+          <p class="about-text">LBB is a DNBC business that attracts paying members from over 75 different countries and an audience from every corner of the world.  Our audience and traffic increases exponentially year-on-year, more recently due to the fact LBB’s membership model allows all of our content (editorial and member-published) to remain paywall free.
+
+            We have 40+ staff working in offices in the UK, Germany, Australia and Canada and a board made up of advertising, production and post production legends. It includes Sir John Hegarty, founder of Bartle Bogle Hegarty (BBH) and Steve Parish, founder of DNBC production powerhouse Tag Worldwide and chairman of Crystal Palace Football Club amongst others.</p> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="mb-5 py-4 bg-light rounded">
+      <div class="container">
+        <h3 class="text-center mb-5">Our Journey</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>Jun2006</h4>
+                  <p> Little Black Book guides to advertising hubs worldwide are printed and distributed .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>Jun2009</h4>
+                  <p>LBB hosts the first ever Cannes Lions fringe beach event - LBB & Friends Beach
+
+                    .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>Jan2011</h4>
+                  <p>wwwDNBC.com goes live - turning its printed guides into something fully digital and DNBC.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>Oct2011</h4>
+                  <p>The LBB editorial team is established .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>May2014</h4>
+                  <p> LBB launches ‘Membership with Coverage’ - content writing services for members.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>Jan2018</h4>
+                  <p>The Immortal Awards launches.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h4>2021</h4>
+                  <p> LBB’s editorial team doubles in size from 5 to 10 writers and dedicated Americas & EMEA editorial teams are established.</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>May2022</h4>
+                        <p>DNBC opens APAC office in Sydney.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Aug2022</h4>
+                        <p>LBB announces boots on the ground in Canada .</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Sap2022</h4>
+                        <p>LBB launches smartest free-to-view creative library in adland.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Jan2020-Dec2022</h4>
+                        <p> Dec 2022 - LBB’s staff grows by 20..</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Mar2023</h4>
+                        <p>- LBB launches ‘Membership with Library Management’ - a managed archive service for members.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Jul2023</h4>
+                        <p>- DNBC makes video hosting from its archive available to members free of charge.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Oct2023</h4>
+                        <p> DNBC launches new platform with new UX and moves the Creative Library and smart credits out of Beta testing.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4>Nov2023</h4>
+                        <p>.Pro User membership launches - a membership for individuals</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Mission and Values -->
+    <section id="mission" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="./Assets/img/about/premium_photo-1663054265630-baeae23397cd.avif" alt="GlobalNews Mission" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">Our Mission</h2>
+          <p class="lead mb-4">To inform, engage, and empower through truthful storytelling and responsible journalism.</p>
+          <p class="mb-4">At DNBCNews, we believe that accurate information is essential for a functioning democracy. Our mission is to provide comprehensive, balanced reporting that helps our audience understand the complex world around them.</p>
+          
+          <h3 class="h5 mt-4 mb-3">Our Core Values</h3>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Accuracy</h4>
+                  <p class="small mb-0">We verify facts and correct errors promptly.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Independence</h4>
+                  <p class="small mb-0">We maintain editorial autonomy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-balance-scale"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Fairness</h4>
+                  <p class="small mb-0">We present diverse perspectives.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">DNBC Perspective</h4>
+                  <p class="small mb-0">We cover stories from around the world.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section id="team" class="mb-5">
+      <h2 class="section-title text-center mb-5">Our Leadership Team</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/1.jpg" alt="CEO" class="team-img-1">
+              </div>
+              <h4 class="h5">Sarah Johnson</h4>
+              <p class="text-primary mb-2">Chief Executive Officer</p>
+              <p class="small mb-3">Former investigative journalist with 20+ years of experience in media leadership.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/OIP.jpg" alt="Editor in Chief" class="team-img-1">
+              </div>
+              <h4 class="h5">Michael Chen</h4>
+              <p class="text-primary mb-2">Editor-in-Chief</p>
+              <p class="small mb-3">Pulitzer Prize-winning journalist who has covered major DNBC events for 15 years.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/44.jpg" alt="Digital Director" class="team-img-1">
+              </div>
+              <h4 class="h5">Amara Rodriguez</h4>
+              <p class="text-primary mb-2">Digital Director</p>
+              <p class="small mb-3">Tech innovator who has led digital transformation at major media companies.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/download 4444.jpg" alt="Managing Editor" class="team-img-2">
+              </div>
+              <h4 class="h5">David Okafor</h4>
+              <p class="text-primary mb-2">Managing Editor</p>
+              <p class="small mb-3">Award-winning editor with expertise in international affairs and investigative reporting.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="#" class="btn btn-outline-primary">View Full Team</a>
+      </div>
+    </section>
+
+    <!-- Awards and Recognition -->
+    <section class="mb-5 py-5 bg-light rounded">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Awards & Recognition</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="award-icon me-3">
+                        <i class="bi bi-trophy-fill text-warning fs-1"></i>
+                      </div>
+                      <div>
+                        <h4 class="h5 mb-1">Pulitzer Prize</h4>
+                        <p class="small text-muted mb-0">2022</p>
+                      </div>
+                    </div>
+                    <p>For outstanding investigative reporting on DNBC supply chain corruption.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="award-icon me-3">
+                        <i class="bi bi-award-fill text-warning fs-1"></i>
+                      </div>
+                      <div>
+                        <h4 class="h5 mb-1">Edward R. Murrow Award</h4>
+                        <p class="small text-muted mb-0">2021</p>
+                      </div>
+                    </div>
+                    <p>For excellence in video journalism covering humanitarian crises.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="award-icon me-3">
+                        <i class="bi bi-star-fill text-warning fs-1"></i>
+                      </div>
+                      <div>
+                        <h4 class="h5 mb-1">Online News Association Award</h4>
+                        <p class="small text-muted mb-0">2020</p>
+                      </div>
+                    </div>
+                    <p>For innovative digital storytelling and data visualization.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="award-icon me-3">
+                        <i class="bi bi-bookmark-star-fill text-warning fs-1"></i>
+                      </div>
+                      <div>
+                        <h4 class="h5 mb-1">International Press Freedom Award</h4>
+                        <p class="small text-muted mb-0">2019</p>
+                      </div>
+                    </div>
+                    <p>For courage in reporting under challenging and dangerous conditions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ethics and Standards -->
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="section-title text-center mb-4">Our Ethics & Standards</h2>
+          <p class="text-center mb-5">DNBCNews adheres to the highest journalistic standards. Our ethics policy guides all our reporting and editorial decisions.</p>
+          
+          <div class="accordion" id="ethicsAccordion">
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  Accuracy and Fact-Checking
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#ethicsAccordion">
+                <div class="accordion-body">
+                  <p>We verify all information before publication and maintain rigorous fact-checking processes. When we make errors, we correct them promptly and transparently.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  Independence and Conflicts of Interest
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#ethicsAccordion">
+                <div class="accordion-body">
+                  <p>Our journalists avoid conflicts of interest and disclose any potential conflicts. We maintain a strict separation between news and advertising content, and our editorial decisions are made independently of commercial considerations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                  Fairness and Balance
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#ethicsAccordion">
+                <div class="accordion-body">
+                  <p>We present diverse perspectives on controversial issues and give fair opportunity for comment to those criticized in our reporting. We strive to provide context and nuance in all our coverage.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                  Source Protection and Transparency
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#ethicsAccordion">
+                <div class="accordion-body">
+                  <p>We protect confidential sources while being as transparent as possible about our sourcing. We clearly identify opinion content and distinguish it from news reporting.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary">Read Full Ethics Policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">DNBC News</h5>
+          <p>Your trusted source for breaking news, in-depth reporting, and analysis from around the world.</p>
+          <div class="mt-4">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Categories</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Politics</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Business</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Today_in_World</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Health</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Sports</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none"></a>Contact</li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Advertise</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Ethics Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Subscribe</h5>
+          <p>Get our daily newsletter for the latest updates.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+          </form>
+          <p class="small">By subscribing, you agree to our Terms of Use and Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

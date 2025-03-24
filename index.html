@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNBC News - Your Trusted News Source</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./Assets/css/style.css">
+  <link rel="stylesheet" href="./Assets/css/about.css">
+  <link rel="stylesheet" href="./Assets/css/contact.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="bi bi-newspaper me-2"></i>DNBC News
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./business.html">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sport.html">Sport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./today_in_world.html">Today in world</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search news..." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <div class="ms-2 d-none d-lg-block">
+            <a href="#" class="btn btn-secondary btn-sm">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="breaking-news py-2 bg-danger text-white">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <span class="badge bg-white text-danger me-2">BREAKING</span>
+        <div class="ticker-wrapper">
+          <span>DNBC summit on climate change concludes with new emissions agreement • Tech giant unveils revolutionary
+            AI assistant • Major sports upset as underdog team claims championship</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="featured-news">
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Assets/img/gpt top 1.webp" class="d-block w-100" alt="Climate Summit">
+          <div class="carousel-caption">
+            <span class="badge bg-primary mb-2">World</span>
+            <h2>Global Leaders Meet to Tackle Economic and Security Challenges</h2>
+            <p class="d-none d-md-block">World leaders gathered today for a high-level summit addressing economic
+              instability and global security concerns. Discussions focused on trade, climate change, and emerging
+              technologies.</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img
+            src="https://marketplace.canva.com/EAFAt3pr07o/1/0/1600w/canva-black-white-and-red-breaking-news-headline-youtube-thumbnail-A-awJfo2ZaY.jpg"
+            class="d-block w-100" alt="Tech Innovation">
+          <div class="carousel-caption">
+            <span class="badge bg-primary mb-2">Technology</span>
+            <h2>Revolutionary AI Technology Transforms Healthcare</h2>
+            <p class="d-none d-md-block">New artificial intelligence system can predict health issues with 95% accuracy.
+            </p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Assets/img/gpt top 3.webp" class="d-block w-100" alt="Sports Championship">
+          <div class="carousel-caption">
+            <span class="badge bg-primary mb-2">Sports</span>
+            <h2>Underdog Team Claims Championship in Stunning Upset</h2>
+            <p class="d-none d-md-block">Here is a vibrant sports-themed digital illustration featuring athletes from
+              various disciplines, a stadium with cheering crowds, and motion effects capturing the excitement of global
+              competition</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section class="Featured-News-sec">
+
+    <div class="news-container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="news-title">FEATURED NEWS</h2>
+        <div class="news-navigation">
+          <button onclick="scrollLeft()">&#10094;</button>
+          <button onclick="scrollRight()">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="news-slider" id="newsSlider">
+        <!-- Business News -->
+        <div class="news-card">
+          <img src="./assets/img/featured-news-b-1.jpg" alt="Business">
+          <div class="badge-category">BUSINESS</div>
+          <div class="news-caption">
+
+            <h6>Lorem Ipsum Dolor Sit Amet Elit...</h6>
+          </div>
+        </div>
+
+        <!-- Sports News -->
+        <div class="news-card">
+          <img src="./assets/img/sports-news-1.jpg" alt="Sports">
+          <div class="badge-category">SPORTS</div>
+          <div class="news-caption">
+
+            <h6>Exciting Match Ends in a Dramatic Victory...</h6>
+          </div>
+        </div>
+
+        <!-- World News -->
+        <div class="news-card">
+          <img src="./assets/img/world-1.jpg" alt="World News">
+          <div class="badge-category">WORLD</div>
+          <div class="news-caption">
+
+            <h6>Global Leaders Meet to Discuss Future...</h6>
+          </div>
+        </div>
+
+        <!-- Business News -->
+        <div class="news-card">
+          <img src="./assets/img/news-800x500-1.jpg" alt="Business">
+          <div class="badge-category">BUSINESS</div>
+          <div class="news-caption">
+
+            <h6>How Startups are Changing the Game...</h6>
+          </div>
+        </div>
+
+        <!-- Sports News -->
+        <div class="news-card">
+          <img src="./assets/img/sports-news-2.jpg" alt="Sports">
+          <div class="badge-category">SPORTS</div>
+          <div class="news-caption">
+
+            <h6>Championship: Who Will Win?</h6>
+          </div>
+        </div>
+
+        <!-- World News -->
+        <div class="news-card">
+          <img src="./assets/img/world_3.jpg" alt="World News">
+          <div class="badge-category">WORLD</div>
+          <div class="news-caption">
+
+            <h6>What is the impact of 1 tree?</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container py-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <section class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="section-title">Top Stories</h3>
+            <a href="#" class="text-decoration-none text-secondary">View All <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./Assets/img/gpt buss.webp" class="card-img-top" alt="Economic News">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Business</span>
+                  <h4 class="card-title">Global Markets Surge as Investors Eye Growth Opportunities</h4>
+                  <p class="card-text">Stock markets worldwide experienced a sharp rise today as investors reacted to
+                    positive economic indicators. With major indices hitting record highs, experts predict strong growth
+                    in the coming months. Stay tuned for in-depth financial insights and corporate updates.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">3 hours ago</small>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./Assets/img/5494.jpg" class="card-img-top" alt="Sport Summit">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Sport</span>
+                  <h4 class="card-title">Cricket Fever: A Celebration of the Game and Glory</h4>
+                  <p class="card-text">This vibrant digital artwork captures the essence of cricket with silhouettes of
+                    players in action, dynamic strokes of green and yellow, and a prestigious golden trophy symbolizing
+                    victory. The image represents the spirit of the sport, excitement, and competitive passion, making
+                    it perfect for cricket-related news, tournaments, or championship coverage.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">5 hours ago</small>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./Assets/img/health.webp" class="card-img-top" alt="Health News">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Health</span>
+                  <h5 class="card-title">An 80-year-old man said getting his hearing checked has allowed him to
+                    volunteer for his community. Howard Bartlett from as a new study suggests 35% of people in the south west never have</h5>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted">Yesterday</small>
+                    <a href="https://www.bbc.com/news/articles/c39vdrnwkrxo" class="text-primary" target="_blank">Read
+                      <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./Assets/img/Technology.webp" class="card-img-top" alt="Tech News">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Technology</span>
+                  <h5 class="card-title">Dutch company Allseas, which is working with Mr Barron's firm, has developed
+                    mining machinery nodules off the seabed and sending them to a support ship on the surface.</h5>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted">2 days ago</small>
+                    <a href="https://www.bbc.com/news/articles/cg45zwe0v0ro" class="text-primary" target="_blank">Read
+                      <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./Assets/img/entertainment.jpg" class="card-img-top" alt="Entertainment News">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Entertainment</span>
+                  <h5 class="card-title">The GCC’s entertainment sector thrives on innovative strategies and
+                    collaborations, with AI poised to revolutionise guest experiences, operations, and safety</h5>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-muted">3 days ago</small>
+                    <a href="https://www.arabianbusiness.com/opinion/what-role-can-ai-play-in-transforming-the-entertainment-industry-in-the-gcc"
+                      class="text-primary" target="_blank">Read <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="section-title">Latest News</h3>
+            <a href="#" class="text-decoration-none text-secondary">View All <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-3 shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./Assets/img/gpt scince 1.webp" class="img-fluid rounded" alt="Science News">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <span class="badge bg-primary mb-2">Science</span>
+                    <h5 class="card-title">Astronomers Discover Earth-like Planet in Habitable Zone</h5>
+                    <p class="card-text">New exoplanet could potentially support life, researchers say.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">4 hours ago</small>
+                      <span class="text-primary">Read More <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-3 shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./Assets/img/gpt sport 1.jpg" class="img-fluid rounded pt-1" alt="Sports News"
+                    style="height: 90px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <span class="badge bg-primary mb-2">Sports</span>
+                    <h5 class="card-title">Star Athlete Signs Record-Breaking Contract Extension</h5>
+                    <p class="card-text">Deal makes player the highest-paid in league history.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">6 hours ago</small>
+                      <span class="text-primary">Read More <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-3 shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./Assets/img/gpt eud 1.jpg" class="img-fluid rounded" alt="Education News">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <span class="badge bg-primary mb-2">Education</span>
+                    <h5 class="card-title">Universities Announce New Approach to Online Learning</h5>
+                    <p class="card-text">Hybrid model aims to combine benefits of in-person and remote education.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">8 hours ago</small>
+                      <span class="text-primary">Read More <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action border-0 mb-3 shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./Assets/img/gpt 4.jpg" class="img-fluid rounded" alt="Environment News">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <span class="badge bg-primary mb-2">Environment</span>
+                    <h5 class="card-title">Innovative Ocean Cleanup Project Shows Promising Results</h5>
+                    <p class="card-text">Technology removes 80% more plastic waste than previous methods.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">10 hours ago</small>
+                      <span class="text-primary">Read More <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card border-0 bg-primary text-white mb-4 shadow">
+          <div class="card-body p-4">
+            <h4 class="card-title">Stay Updated</h4>
+            <p class="card-text">Subscribe to our newsletter for daily news updates delivered to your inbox.</p>
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your email address" required>
+              </div>
+              <button type="submit" class="btn btn-light">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card border-0 mb-4 shadow">
+          <div class="card-header bg-white border-0">
+            <h4 class="card-title m-0">Trending Now</h4>
+          </div>
+          <div class="card-body">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item border-0 d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <a href="#" class="text-decoration-none text-dark fw-bold">Global Stock Markets Hit New Records</a>
+                  <div><small class="text-muted">Business</small></div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <a href="#" class="text-decoration-none text-dark fw-bold">New Health Study Reveals Benefits of
+                    Intermittent Fasting</a>
+                  <div><small class="text-muted">Health</small></div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <a href="#" class="text-decoration-none text-dark fw-bold">Tech Giant Unveils Next-Generation
+                    Smartphone</a>
+                  <div><small class="text-muted">Technology</small></div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <a href="#" class="text-decoration-none text-dark fw-bold">Major Film Studio Announces Sequel to
+                    Blockbuster Movie</a>
+                  <div><small class="text-muted">Entertainment</small></div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <a href="#" class="text-decoration-none text-dark fw-bold">Political Leaders Meet to Discuss Regional
+                    Security</a>
+                  <div><small class="text-muted">Politics</small></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card border-0 mb-4 shadow">
+          <div class="card-header bg-white border-0">
+            <h4 class="card-title m-0">Must Read Stories</h4>
+          </div>
+          <div class="card-body p-0">
+            <div class="list-group list-group-flush">
+              <a href="https://www.bbc.com/news/articles/c4g91kyjw07o"
+                class="list-group-item list-group-item-action py-3" target="_blank">
+                <div class="row g-0">
+                  <div class="col-12 col-lg-4 col-md-4" class="story-img">
+                    <img src="./Assets/img/story 2.webp" class="card-img-top" alt=" Stories Pick">
+                  </div>
+                  <div class="col-8">
+                    <div class="ps-3">
+                      <h6 class="mb-1">TikTok is again available on the US app stores of Apple and Google, after
+                        President Donald Trump of a ban of the Chinese-owned social media platform until 5 April.
+
+                        The popular app, which is used by more than 170 million American users, went dark briefly last
+                        month in the US </h6>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://www.bbc.com/news/articles/clyzym0vn8go" class="list-group-item list-group-item-action py-3" target="_blank">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="./Assets/img/story 1.webp" class="card-img-top" alt=" Stories Pick">
+                  </div>
+                  <div class="col-8">
+                    <div class="ps-3">
+                      <h6 class="mb-1">S Korea removes Deepseek from app stores over privacy concerns
+                        South Korea has banned new downloads of China's DeepSeek artificial intelligence (AI) chatbot,
+                        according to the country's personal data protection watchdog.
+
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://www.bbc.com/news/articles/c7438n7qyl0o" class="list-group-item list-group-item-action py-3" target="_blank">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="./Assets/img/story 3.webp" class="card-img-top" alt=" Stories Pick">
+                  </div>
+                  <div class="col-8">
+                    <div class="ps-3">
+                      <h6 class="mb-1">Fashion retailer New Look is set to exit the Republic of Ireland market, putting about 347 workers at risk of redundancy.
+
+                        The retailer's Irish arm, New Look Retailers (Ireland) Ltd, entered into liquidation on Thursday.</h6>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-light mb-4 text-center shadow">
+          <div class="card-body p-4">
+            <small class="text-muted text-uppercase">Advertisement</small>
+            <div class="my-3">
+              <img src="./Assets/img/gpt news.webp" class="card-img-top" alt="Advertisement">
+            </div>
+            <h5>Special Offer</h5>
+            <p class="mb-2">Premium subscription - 50% off for the first 3 months</p>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- About us  -->
+   
+  <!-- Main Content -->
+  <main class="container py-5" id="about">
+    <!-- Our Story Section -->
+    <section class="mb-5">
+      <div class="row">
+        <div class="text-center ">
+          <h2 class="section-title-centered mb-4  ">About Us . </p>
+          <h6 class="mb-4 about-text">We are a paywall-free DNBC platform for the advertising and marketing community. Half a million visitors from ad agencies, brands and maker companies use it every month to find out about the most creative news, work, people and companies from around the world. 
+            Our mission is to help the creative sector and the businesses in it to grow. All the tools and benefits we build into our platform and our memberships aim to help companies and individuals save precious time and spend so that they can reinvest it in what they do best - being creative.
+            
+            There are three ways to interact with Little Black Book: As a Company Member (£1,500 per annum), individually as a Pro User (£99.99 per annum) and individually as a User (free) - Read the benefits and how it works for different members here. .</h6>
+          <p class="about-text">LBB is a DNBC business that attracts paying members from over 75 different countries and an audience from every corner of the world.  Our audience and traffic increases exponentially year-on-year, more recently due to the fact LBB’s membership model allows all of our content (editorial and member-published) to remain paywall free.
+
+            We have 40+ staff working in offices in the UK, Germany, Australia and Canada and a board made up of advertising, production and post production legends. It includes Sir John Hegarty, founder of Bartle Bogle Hegarty (BBH) and Steve Parish, founder of DNBC production powerhouse Tag Worldwide and chairman of Crystal Palace Football Club amongst others.</p> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission and Values -->
+    <section id="mission" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="./Assets/img/about/premium_photo-1663054265630-baeae23397cd.avif" alt="GlobalNews Mission" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">Our Mission</h2>
+          <p class="lead mb-4">To inform, engage, and empower through truthful storytelling and responsible journalism.</p>
+          <p class="mb-4">At DNBCNews, we believe that accurate information is essential for a functioning democracy. Our mission is to provide comprehensive, balanced reporting that helps our audience understand the complex world around them.</p>
+          
+          <h3 class="h5 mt-4 mb-3">Our Core Values</h3>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Accuracy</h4>
+                  <p class="small mb-0">We verify facts and correct errors promptly.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Independence</h4>
+                  <p class="small mb-0">We maintain editorial autonomy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-balance-scale"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Fairness</h4>
+                  <p class="small mb-0">We present diverse perspectives.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-center">
+                <div class="value-icon bg-primary text-white me-3">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">DNBC Perspective</h4>
+                  <p class="small mb-0">We cover stories from around the world.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="mb-5">
+      <h2 class="section-title text-center mb-5">Our Leadership Team</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/1.jpg" alt="CEO" class="team-img-1">
+              </div>
+              <h4 class="h5">Sarah Johnson</h4>
+              <p class="text-primary mb-2">Chief Executive Officer</p>
+              <p class="small mb-3">Former investigative journalist with 20+ years of experience in media leadership.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/OIP.jpg" alt="Editor in Chief" class="team-img-1">
+              </div>
+              <h4 class="h5">Michael Chen</h4>
+              <p class="text-primary mb-2">Editor-in-Chief</p>
+              <p class="small mb-3">Pulitzer Prize-winning journalist who has covered major DNBC events for 15 years.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/44.jpg" alt="Digital Director" class="team-img-1">
+              </div>
+              <h4 class="h5">Amara Rodriguez</h4>
+              <p class="text-primary mb-2">Digital Director</p>
+              <p class="small mb-3">Tech innovator who has led digital transformation at major media companies.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card border-0 text-center h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="team-img-wrapper mb-3 mx-auto">
+                <img src="./Assets/img/about/download 4444.jpg" alt="Managing Editor" class="team-img-2">
+              </div>
+              <h4 class="h5">David Okafor</h4>
+              <p class="text-primary mb-2">Managing Editor</p>
+              <p class="small mb-3">Award-winning editor with expertise in international affairs and investigative reporting.</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-muted me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="#" class="btn btn-outline-primary">View Full Team</a>
+      </div>
+    </section>
+
+    <!-- /About us  -->
+
+    <!-- contact -->
+     <section id="Contact" class="contact">
+    <div class="container contact-section">
+      <h1>Contact Us</h1>
+      <div class="row">
+          <!-- Contact Info & Form -->
+          <div class="col-md-8">
+              <div class="contact-box">
+                  <h3>CONTACT US FOR ANY QUERIES</h3>
+                  <p>The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="#">Download Now</a>.</p>
+                  <h5>CONTACT INFO</h5>
+                  <p> Baldia Town Karachi  Pakistan </p>
+                  <p>Email: sadeen2410a@aptechgdn.net</p>
+                  <p>Phone: +92 3193914401</p>
+                  
+                  <h5>CONTACT US</h5>
+                  <form>
+                      <div class="row">
+                          <div class="col-md-6 mb-3">
+                              <input type="text" class="form-control" placeholder="Your Name" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                              <input type="email" class="form-control" placeholder="Your Email" required>
+                          </div>
+                      </div>
+                      <div class="mb-3">
+                          <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                      </div>
+                      <button class="btn btn-primary">Send Message</button>
+                  </form>
+              </div>
+          </div>
+  
+          <!-- Follow Us Section -->
+          <div class="col-md-4">
+              <div class="contact-box">
+                  <h3>FOLLOW US</h3>
+                  <div class="social-card facebook">
+                      <i class="fab fa-facebook-f"></i>
+                      <span>12,345 Fans</span>
+                  </div>
+                  <div class="social-card twitter">
+                      <i class="fab fa-twitter"></i>
+                      <span>12,345 Followers</span>
+                  </div>
+                  <div class="social-card linkedin">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>12,345 Connects</span>
+                  </div>
+                  <div class="social-card instagram">
+                      <i class="fab fa-instagram"></i>
+                      <span>12,345 Followers</span>
+                  </div>
+                  <div class="social-card youtube">
+                      <i class="fab fa-youtube"></i>
+                      <span>12,345 Subscribers</span>
+                  </div>
+                  <div class="social-card vimeo">
+                      <i class="fab fa-vimeo-v"></i>
+                      <span>12,345 Followers</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Back to Top Button -->
+  <div style="position: fixed; bottom: 20px; right: 20px;">
+      <a href="#" class="btn-yellow"><i class="fas fa-arrow-up"></i></a>
+  </div>
+</section>
+    <!-- /contact -->
+     
+
+  <footer class="bg-dark w-100 text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">DNBC News</h5>
+          <p>Your trusted source for breaking news, in-depth reporting, and analysis from around the world.</p>
+          <div class="mt-4">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Categories</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Business</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Sports</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Today_in_World</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none"></a>Contact</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Company</h5>
+          <ul class="list-unstyled">
+           
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Advertise</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Ethics Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Subscribe</h5>
+          <p>Get our daily newsletter for the latest updates.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+          </form>
+          <p class="small">By subscribing, you agree to our Terms of Use and Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

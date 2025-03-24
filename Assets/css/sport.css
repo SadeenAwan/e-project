@@ -1,0 +1,324 @@
+
+:root {
+  --primary: #0a2463;
+  --secondary: #d00000;
+  --light-bg: #f8f9fa;
+  --dark-text: #212529;
+  --light-text: #ffffff;
+  --accent: #3e92cc;
+  --muted: #6c757d;
+  --border: #dee2e6;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: #051c4e;
+  border-color: #051c4e;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background-color: #b80000;
+  border-color: #b80000;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.badge.bg-primary {
+  background-color: var(--primary) !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.about-text{
+  font-size: large;
+}
+.team-img-1{
+  height: 170px;
+  border-radius: 60% !important;
+}
+.team-img-2{
+  height: 170px;
+  width: 200px;
+  
+  border-radius: 60% !important;
+}
+.featured-news .carousel-item img {
+max-height: 90vh; /* Limits height to 50% of viewport height */
+object-fit: cover;
+}
+
+/* sport */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 20%;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.carousel-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.carousel-text a {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.carousel-text a:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Featured Articles Section */
+.featured-articles {
+  margin-bottom: 40px;
+}
+
+.article-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.article-card {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.article-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+}
+
+/* Trending News */
+.trending-news ul {
+  list-style: none;
+}
+
+.trending-news a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.trending-news a:hover {
+  text-decoration: underline;
+}
+
+/* Sports News Grids */
+.sports-news-grids {
+  margin-bottom: 40px;
+}
+
+.news-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.news-category {
+  width: 30%;
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-card {
+  height: 300px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.news-card h3 {
+  font-size: 18px;
+}
+
+.news-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+/* Expert's Opinion Section */
+.expert-opinion {
+  margin-bottom: 40px;
+}
+
+.opinion-card {
+  display: flex;
+  gap: 20px;
+}
+
+.opinion-card img {
+  border-radius: 50%;
+}
+
+.opinion-text h3 {
+  font-size: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 30%;
+}
+
+.advertisement img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+.hore-sport-img{
+  width: 216vh;
+  height: 90vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.main-image {
+  width: 100%;
+  height: auto;
+}
+.news-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.news-category {
+  color: green;
+}

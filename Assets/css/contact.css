@@ -1,0 +1,101 @@
+
+:root {
+    --primary: #0a2463;
+    --secondary: #d00000;
+    --light-bg: #f8f9fa;
+    --dark-text: #212529;
+    --light-text: #ffffff;
+    --accent: #3e92cc;
+    --muted: #6c757d;
+    --border: #dee2e6;
+  }
+  
+  body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--dark-text);
+    background-color: var(--light-bg);
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .bg-primary {
+    background-color: var(--primary) !important;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: #051c4e;
+    border-color: #051c4e;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #b80000;
+    border-color: #b80000;
+  }
+  
+  .text-primary {
+    color: var(--primary) !important;
+  }
+  
+  .badge.bg-primary {
+    background-color: var(--primary) !important;
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+ 
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.contact-section {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+.contact-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-box h3 {
+    border-bottom: 3px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.social-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.social-card i {
+    font-size: 30px;
+    width: 40px;
+}
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.linkedin { background: #0077b5; }
+.instagram { background: #e1306c; }
+.youtube { background: #ff0000; }
+.vimeo { background: #1ab7ea; }
+.btn-yellow {
+    background: #f1c40f;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
